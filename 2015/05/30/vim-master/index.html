@@ -20,7 +20,7 @@
 
 
 
-  <meta name="keywords" content="php" />
+  <meta name="keywords" content="aaa," />
 
 
 
@@ -34,13 +34,15 @@
   var CONFIG = {
     scheme: 'Mist',
     analytics: {
-      baidu: '',
+      baidu: 'fc37e1cd2fb514f08d5dac8ba1dd69b4',
       google: ''
     },
     sidebar: 'always'
   };
 </script>
 
+
+  <script type="text/javascript" src="/js/analytics_baidu-analytics.js"></script>
 
 
 
@@ -74,6 +76,22 @@
         <a href="/">
           <i class="menu-item-icon icon-home"></i> <br />
           首页
+        </a>
+      </li>
+    
+      
+      <li class="menu-item menu-item-categories">
+        <a href="/categories">
+          <i class="menu-item-icon icon-categories"></i> <br />
+          分类
+        </a>
+      </li>
+    
+      
+      <li class="menu-item menu-item-about">
+        <a href="/about">
+          <i class="menu-item-icon icon-about"></i> <br />
+          关于
         </a>
       </li>
     
@@ -128,8 +146,26 @@
         </span>
 
         
+          <span class="post-category">
+            &nbsp; | &nbsp; 分类于
+            
+              <a href="/categories/jishu/">jishu</a>
+
+              
+              
+
+            
+          </span>
+        
 
         
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/2015/05/30/vim-master/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="2015/05/30/vim-master/"></span>
+            </a>
+          </span>
           
         
       </div>
@@ -148,6 +184,12 @@
 
     <div class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/aaa/"> #aaa </a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
@@ -158,8 +200,6 @@
           </div>
 
           <div class="post-nav-next post-nav-item">
-            
-              <a href="/2015/01/16/test/">我的测试</a>
             
           </div>
         </div>
@@ -174,6 +214,10 @@
 
     
       <div class="comments" id="comments">
+        
+          <div class="ds-thread" data-thread-key="2015/05/30/vim-master/"
+               data-title="vim-master" data-url="http://yoursite.com/2015/05/30/vim-master/">
+          </div>
         
       </div>
     
@@ -219,16 +263,16 @@
         <div class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">2</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
-            
-              <span class="site-state-item-count">0</span>
+            <a href="/categories">
+              <span class="site-state-item-count">1</span>
               <span class="site-state-item-name">分类</span>
-              
+              </a>
           </div>
 
           <div class="site-state-item site-state-tags">
@@ -481,7 +525,7 @@
   
 
   <script type="text/javascript">
-    var duoshuoQuery = {short_name:""};
+    var duoshuoQuery = {short_name:"jingxu"};
     (function() {
       var ds = document.createElement('script');
       ds.type = 'text/javascript';ds.async = true;
