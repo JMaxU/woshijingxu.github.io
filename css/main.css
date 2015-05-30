@@ -478,35 +478,39 @@ td {
 }
 @font-face {
   font-family: 'Lato';
-  src: url("../fonts/lato/Lato-Regular.eot"); /* IE9 Compat Modes */
-  src: url("../fonts/lato/Lato-Regular.eot?#iefix") format('embedded-opentype'), url("../fonts/lato/Lato-Regular.woff") format('woff'), url("../fonts/lato/Lato-Regular.ttf") format('truetype');
-  font-style: normal;
+  src: url("../fonts/lato/lato-reg-webfont-g.eot");
   font-weight: normal;
-  text-rendering: optimizeLegibility;
-}
-@font-face {
-  font-family: 'Lato';
-  src: url("../fonts/lato/Lato-Bold.eot"); /* IE9 Compat Modes */
-  src: url("../fonts/lato/Lato-Bold.eot?#iefix") format('embedded-opentype'), url("../fonts/lato/Lato-Bold.woff") format('woff'), url("../fonts/lato/Lato-Bold.ttf") format('truetype');
   font-style: normal;
-  font-weight: bold;
-  text-rendering: optimizeLegibility;
 }
 @font-face {
   font-family: 'Lato';
-  src: url("../fonts/lato/Lato-Italic.eot"); /* IE9 Compat Modes */
-  src: url("../fonts/lato/Lato-Italic.eot?#iefix") format('embedded-opentype'), url("../fonts/lato/Lato-Italic.woff") format('woff'), url("../fonts/lato/Lato-Italic.ttf") format('truetype');
-  font-style: italic;
+  src: url("../fonts/lato/lato-reg-webfont-g.woff") format('woff');
   font-weight: normal;
-  text-rendering: optimizeLegibility;
+  font-style: normal;
 }
 @font-face {
   font-family: 'Lato';
-  src: url("../fonts/lato/Lato-BoldItalic.eot"); /* IE9 Compat Modes */
-  src: url("../fonts/lato/Lato-BoldItalic.eot?#iefix") format('embedded-opentype'), url("../fonts/lato/Lato-BoldItalic.woff") format('woff'), url("../fonts/lato/Lato-BoldItalic.ttf") format('truetype');
-  font-style: italic;
+  src: url("../fonts/lato/lato-bol-webfont-g.eot");
   font-weight: bold;
-  text-rendering: optimizeLegibility;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/lato/lato-bol-webfont-g.woff") format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/lato/lato-regita-webfont-g.eot");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/lato/lato-regita-webfont-g.woff") format('woff');
+  font-weight: normal;
+  font-style: italic;
 }
 @font-face {
   font-family: 'default';
@@ -702,7 +706,7 @@ td {
   overflow: auto;
   font-size: 13px;
   color: #4d4d4c;
-  line-height: 1.2;
+  line-height: 1.8;
 }
 .post .highlight .gutter pre,
 .post .gist .gist-file .gist-data .line-numbers {
@@ -762,7 +766,7 @@ td {
 .post .gist {
   margin: 20px 0;
   border-style: solid;
-  border-color: #ccc;
+  border-color: $baseBorderColor;
   border-width: 1px 0;
   background: #f7f7f7;
   padding: 15px 40px 15px 15px;
@@ -961,11 +965,6 @@ body {
   display: inline-block;
   margin-left: 20px;
 }
-@media screen and (max-width: 767px) {
-  .menu .menu-item {
-    margin-top: 10px;
-  }
-}
 .menu .menu-item:first-child {
   margin-left: 0;
 }
@@ -982,37 +981,6 @@ body {
 }
 .menu .menu-item a:hover {
   border-bottom-color: #222;
-}
-input.menu-search-input {
-  background-repeat: no-repeat;
-  background-position: 5px center;
-  width: 70px;
-  height: 20px;
-  padding: 3px 9px 3px 23px;
-  border-radius: 25px;
-  border: 1px solid #c4c4c4;
-  box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.17);
-  color: #555;
-  font-size: 13px;
-  background-image: url("/images/searchicon.png");
-  background-size: 15px 15px;
-}
-.menu .menu-item-search .st-search-input {
-  width: 80px;
-  float: left;
-}
-.theme-next-mist .menu .menu-item-search .st-search-input {
-  float: none;
-}
-@media screen and (max-width: 767px) {
-  .menu .menu-item-search {
-    margin-bottom: 15px;
-    display: block;
-  }
-  .menu .menu-item-search .st-search-input {
-    width: auto;
-    float: none;
-  }
 }
 .translation {
   margin-top: -20px;
@@ -1069,11 +1037,8 @@ input.menu-search-input {
   -webkit-transform: translateZ(0);
 }
 .sidebar a {
-  color: #999;
+  color: #555;
   border-bottom-color: #555;
-}
-.sidebar a:hover {
-  color: #eee;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .sidebar {
@@ -1120,9 +1085,6 @@ input.menu-search-input {
 .site-state-item:first-child {
   border-left: none;
 }
-.site-state-item a {
-  border-bottom: none;
-}
 .site-state-item-count {
   display: block;
   text-align: center;
@@ -1160,8 +1122,12 @@ input.menu-search-input {
   vertical-align: middle;
   margin-right: 10px;
   margin-bottom: 10px;
+  color: #555;
   border-bottom-color: #555;
   font-size: 13px;
+}
+.links-of-author a:hover {
+  color: #999;
 }
 .links-of-author a:before {
   display: inline-block;
@@ -1171,7 +1137,7 @@ input.menu-search-input {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #67d7a1;
+  background: #e24622;
 }
 .sidebar-nav {
   margin: 0;
@@ -1395,8 +1361,9 @@ input.menu-search-input {
 .posts-expand .post-meta .post-category-list-link {
   color: #999;
 }
-.posts-expand .post-body {
-  text-align: justify;
+.posts-expand .post-meta .post-comments-count a {
+  border-bottom: none;
+  color: #999;
 }
 .posts-expand .post-body h2,
 .posts-expand .post-body h3,
@@ -1533,10 +1500,6 @@ input.menu-search-input {
 }
 .posts-collapse .post-header {
   position: relative;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-  transition-delay: 0s;
-  transition-property: border;
   border-bottom: 1px dashed #ccc;
 }
 .posts-collapse .post-header::before {
@@ -1550,10 +1513,6 @@ input.menu-search-input {
   background: #bbb;
   border-radius: 50%;
   border: 1px solid #fff;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-  transition-delay: 0s;
-  transition-property: background;
 }
 .posts-collapse .post-header:hover {
   border-bottom-color: #666;
@@ -1675,15 +1634,15 @@ input.menu-search-input {
   margin: 10px;
 }
 .post-gallery {
+  overflow: hidden;
   display: table;
   border-spacing: 10px;
   border-collapse: separate;
 }
 .post-gallery a {
   display: table-cell;
-  float: left;
-  width: 33%;
-  height: 130px;
+  width: 25%;
+  height: 100px;
   text-align: center;
   vertical-align: middle;
   border: none;
@@ -1852,6 +1811,9 @@ input.menu-search-input {
 }
 .theme-next #ds-thread #ds-reset .ds-service-list .ds-more-services:hover {
   background: none;
+}
+.page-home .post-tags {
+  display: none;
 }
 .use-motion .post {
   opacity: 0;
