@@ -48,7 +48,7 @@
 
 
 
-  <title> 数据库交互模式 // Jing Xu </title>
+  <title> 数据库交互模式之工作单元 // Jing Xu </title>
 </head>
 
 <body>
@@ -151,7 +151,7 @@
           
           
             
-              数据库交互模式
+              数据库交互模式之工作单元
             
           
         </h1>
@@ -183,7 +183,14 @@
       
 
       
-        
+        <p>&#x5F53;&#x4E0B;&#x6D41;&#x884C;&#x7684;php&#x6846;&#x67B6;&#x5206;&#x4E3A;&#x4E24;&#x79CD;</p>
+<ul>
+<li>active record</li>
+<li>unit of work + datamapper</li>
+</ul>
+<p>php&#x4E2D;&#x6709;&#x4E24;&#x79CD;&#x6846;&#x67B6;, &#x4E00;&#x79CD;&#x662F;symfony&#x6846;&#x67B6;, &#x4E00;&#x79CD;&#x662F;&#x975E;symfony&#x6846;&#x67B6;, &#x4E00;&#x79CD;&#x662F;&#x5DE5;&#x4F5C;&#x5355;&#x5143;&#x4E0E;datamapper&#x7684;&#x6846;&#x67B6;, &#x4E00;&#x79CD;&#x662F;active record&#x6A21;&#x5F0F;&#x7684;&#x6846;&#x67B6;.<br>&#x524D;&#x4E00;&#x79CD;&#x9002;&#x5408;&#x5904;&#x7406;&#x5927;&#x9879;&#x76EE;, &#x590D;&#x6742;&#x7684;&#x903B;&#x8F91;. &#x540E;&#x4E00;&#x79CD;&#x9002;&#x5408;&#x5C0F;&#x9879;&#x76EE;, &#x5F53;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x53D8;&#x5F97;&#x8D8A;&#x6765;&#x8D8A;&#x590D;&#x6742;&#x65F6;ar&#x6A21;&#x5F0F;&#x5C31;&#x4E0D;&#x884C;&#x4E86;</p>
+<p>&#x9886;&#x57DF;&#x6A21;&#x578B;&#x5206;&#x4E3A;&#x4E24;&#x79CD;</p>
+<h1 id="&#x51E0;&#x4E2A;&#x719F;&#x6089;&#x7684;&#x573A;&#x666F;">&#x51E0;&#x4E2A;&#x719F;&#x6089;&#x7684;&#x573A;&#x666F;</h1><h2 id="&#x573A;&#x666F;&#x4E00;">&#x573A;&#x666F;&#x4E00;</h2><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TestService</span></span><br><span class="line"></span>{</span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">commonMethod</span><span class="params">()</span></span><br><span class="line">    </span>{</span><br><span class="line">        <span class="variable">$modle</span> = User::find();</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -215,7 +222,7 @@
       <div class="comments" id="comments">
         
           <div class="ds-thread" data-thread-key="2015/07/21/数据库交互模式/"
-               data-title="数据库交互模式" data-url="http://yoursite.com/2015/07/21/数据库交互模式/">
+               data-title="数据库交互模式之工作单元" data-url="http://yoursite.com/2015/07/21/数据库交互模式/">
           </div>
         
       </div>
@@ -316,7 +323,7 @@
           <div class="post-toc">
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#几个熟悉的场景"><span class="nav-number">1.</span> <span class="nav-text">几个熟悉的场景</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#场景一"><span class="nav-number">1.1.</span> <span class="nav-text">场景一</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
