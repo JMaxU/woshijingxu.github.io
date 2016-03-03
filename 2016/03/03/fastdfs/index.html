@@ -1,0 +1,580 @@
+<!doctype html>
+<html class="theme-next use-motion theme-next-mist">
+<head>
+  
+
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+  <meta name="google-site-verification" content="NXmysP45cNhZ9S-Bja8C9k8c2uUKeA09LzftV4h9DBU" />
+
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
+
+
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.3"/>
+
+
+
+
+  <meta name="keywords" content="php" />
+
+
+
+
+
+  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.3" />
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: 'Mist',
+    analytics: {
+      baidu: 'fc37e1cd2fb514f08d5dac8ba1dd69b4',
+      google: ''
+    },
+    sidebar: 'post'
+  };
+</script>
+
+
+  <script type="text/javascript" src="/js/analytics_baidu-analytics.js"></script>
+
+
+
+  <title> fastdfs // Jing Xu </title>
+</head>
+
+<body>
+<!--[if lte IE 8]> <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'> <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari." style='margin-left:auto;margin-right:auto;display: block;'/></a></div> <![endif]-->
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <div id="header" class="header">
+      <div class="header-inner">
+        <h1 class="site-meta">
+  <span class="logo-line-before"><i></i></span>
+  <a href="/" class="brand">
+      <span class="logo">
+        <i class="icon-logo"></i>
+      </span>
+      <span class="site-title">Jing Xu</span>
+  </a>
+  <span class="logo-line-after"><i></i></span>
+</h1>
+
+
+  <ul id="menu" class="menu">
+     
+    <!--增加swiftype搜索功能-->
+    <form class="menu-item menu-item-search">
+      <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+    </form>
+    
+    <script type="text/javascript">
+      (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+      (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+      e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+      })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+      _st('install','znWX_P9xUXwRs7WmsvX9','2.0.0');
+    </script>
+    <!--增加swiftype搜索功能end-->
+    
+    
+      
+      <li class="menu-item menu-item-home">
+        <a href="/">
+          <i class="menu-item-icon icon-home"></i> <br />
+          首页
+        </a>
+      </li>
+    
+      
+      <li class="menu-item menu-item-categories">
+        <a href="/categories">
+          <i class="menu-item-icon icon-categories"></i> <br />
+          分类
+        </a>
+      </li>
+    
+      
+      <li class="menu-item menu-item-about">
+        <a href="/about">
+          <i class="menu-item-icon icon-about"></i> <br />
+          关于
+        </a>
+      </li>
+    
+      
+      <li class="menu-item menu-item-archives">
+        <a href="/archives">
+          <i class="menu-item-icon icon-archives"></i> <br />
+          目录
+        </a>
+      </li>
+    
+      
+      <li class="menu-item menu-item-tags">
+        <a href="/tags">
+          <i class="menu-item-icon icon-tags"></i> <br />
+          标签
+        </a>
+      </li>
+    
+  </ul>
+
+
+      </div>
+    </div>
+
+    <div id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              fastdfs
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2016-03-03
+        </span>
+
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/2016/03/03/fastdfs/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/03/fastdfs/"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <h1 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h1><h2 id="&#x4E0B;&#x8F7D;&#x8F6F;&#x4EF6;">&#x4E0B;&#x8F7D;&#x8F6F;&#x4EF6;</h2><p><a href="http://pan.baidu.com/s/1boWTQm" target="_blank" rel="external">http://pan.baidu.com/s/1boWTQm</a></p>
+<h2 id="&#x5B89;&#x88C5;common">&#x5B89;&#x88C5;common</h2><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">unzip libfastcommon-master<span class="class">.zip</span></span><br><span class="line">cd libfastcommon-master</span><br><span class="line">./make<span class="class">.sh</span></span><br><span class="line">./make<span class="class">.sh</span> install</span><br></pre></td></tr></table></figure>
+<h2 id="&#x5B89;&#x88C5;fastdfs">&#x5B89;&#x88C5;fastdfs</h2><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">tar -xv -<span class="keyword">f</span> fastdfs-<span class="number">5.05</span>.tar.gz</span><br><span class="line"><span class="keyword">cd</span> fastdfs-<span class="number">5.05</span></span><br><span class="line">./<span class="keyword">make</span>.<span class="keyword">sh</span></span><br><span class="line">./<span class="keyword">make</span>.<span class="keyword">sh</span> install</span><br><span class="line"><span class="keyword">cp</span> init.<span class="keyword">d</span>/fdfs_* /etc/init.<span class="keyword">d</span>/</span><br></pre></td></tr></table></figure>
+<h2 id="&#x5B89;&#x88C5;fastdht">&#x5B89;&#x88C5;fastdht</h2><h3 id="&#x5B89;&#x88C5;db">&#x5B89;&#x88C5;db</h3><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">tar -xv -f <span class="keyword">db</span>-4.7.25.tar.gz</span><br><span class="line"><span class="keyword">cd</span> ./<span class="keyword">db</span>-4.7.25/build_unix</span><br><span class="line">../dist/configure</span><br><span class="line">make</span><br><span class="line">make install</span><br></pre></td></tr></table></figure>
+<h3 id="&#x5B89;&#x88C5;fastdht">&#x5B89;&#x88C5;fastdht</h3><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">tar xv -<span class="keyword">f</span> FastDHT_v1.<span class="number">23</span>.tar.gz</span><br><span class="line"><span class="keyword">cd</span> FastDHT</span><br><span class="line">./<span class="keyword">make</span>.<span class="keyword">sh</span></span><br><span class="line">./<span class="keyword">make</span>.<span class="keyword">sh</span> install</span><br><span class="line"></span><br><span class="line"><span class="keyword">cp</span> <span class="keyword">conf</span>/* /etc/fdht/</span><br><span class="line"><span class="keyword">cp</span> init.<span class="keyword">d</span>/fdhtd /etc/init.<span class="keyword">d</span>/</span><br></pre></td></tr></table></figure>
+<h1 id="&#x914D;&#x7F6E;">&#x914D;&#x7F6E;</h1><h2 id="&#x914D;&#x7F6E;fastdht">&#x914D;&#x7F6E;fastdht</h2><p><code>vim /etc/fdht/fdhtd.conf</code><br>&#x53EF;&#x4EE5;&#x6539;&#x4EE5;&#x4E0B;&#x9009;&#x9879;<br><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="setting">port=<span class="value"><span class="number">1003</span></span></span></span><br><span class="line"><span class="setting">base_path=<span class="value">/apps/product/fastdht</span></span></span><br></pre></td></tr></table></figure></p>
+<p><code>vim /etc/fdht/fdht_client.conf</code><br>&#x53EF;&#x4EE5;&#x6539;&#x4EE5;&#x4E0B;&#x9009;&#x9879;<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">base_path=<span class="regexp">/apps/product</span><span class="regexp">/fastdht</span></span><br></pre></td></tr></table></figure></p>
+<p><code>/etc/fdht/fdht_servers.conf</code><br>&#x53EF;&#x4EE5;&#x6539;&#x4EE5;&#x4E0B;&#x9009;&#x9879;<br><figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="constant">group_count</span> = 1</span><br><span class="line"><span class="comment"># &#x5982;&#x679C;&#x6709;&#x4E24;&#x4E2A;fastdht&#x8FD9;&#x91CC;&#x5199;&#x4E24;&#x4E2A;</span></span><br><span class="line"><span class="constant">group0</span> = 10.20.69.57:1003</span><br></pre></td></tr></table></figure></p>
+<h2 id="&#x542F;&#x52A8;">&#x542F;&#x52A8;</h2><p><code>/etc/init.d/fdhtd start</code></p>
+<h2 id="&#x914D;&#x7F6E;tracker">&#x914D;&#x7F6E;tracker</h2><p><code>vim /etc/fdfs/tracker.conf</code><br>&#x53EF;&#x4EE5;&#x6539;&#x4EE5;&#x4E0B;&#x9009;&#x9879;<br><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="setting">port=<span class="value"><span class="number">1001</span></span></span></span><br><span class="line"><span class="setting">base_path=<span class="value">/apps/fastdfs/tracker</span></span></span><br></pre></td></tr></table></figure></p>
+<h2 id="&#x542F;&#x52A8;">&#x542F;&#x52A8;</h2><p><code>/etc/init.d/fdfs_trackerd start</code></p>
+<h2 id="&#x914D;&#x7F6E;storage">&#x914D;&#x7F6E;storage</h2><p><code>vim /etc/fdfs/storage.conf</code><br>&#x53EF;&#x4EE5;&#x6539;&#x4EE5;&#x4E0B;&#x9009;&#x9879;<br><figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="constant">group_name</span>=g1</span><br><span class="line"><span class="constant">port</span>=1002</span><br><span class="line"><span class="constant">base_path</span>=/apps/product/fastdfs/storage</span><br><span class="line"><span class="comment"># &#x53EF;&#x4EE5;&#x6301;&#x591A;&#x4E2A;&#x786C;&#x76D8;</span></span><br><span class="line"><span class="constant">store_path0</span>=/apps/fastdfs/storage1</span><br><span class="line"><span class="constant">tracker_server</span>=10.20.69.57:1001</span><br><span class="line"></span><br><span class="line"><span class="comment"># &#x4EE5;&#x4E0B;&#x662F;fastdht&#x76F8;&#x5173;</span></span><br><span class="line"><span class="constant">check_file_duplicate</span>=1</span><br><span class="line"><span class="constant">keep_alive</span>=1</span><br><span class="line"><span class="comment"># &#x8FD9;&#x4E2A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x53EF;&#x4EE5;copy&#x5230;&#x6240;&#x6709;storage&#x6240;&#x5728;&#x7684;&#x673A;&#x5668;</span></span><br><span class="line"><span class="comment">#include /etc/fdht/fdht_servers.conf</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="&#x542F;&#x52A8;">&#x542F;&#x52A8;</h2><p><code>/etc/init.d/fdfs_storaged start</code></p>
+
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/05/30/vim-master/">我的vim配置</a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </div>
+  </div>
+
+
+
+    
+      <div class="comments" id="comments">
+        
+          <div class="ds-thread" data-thread-key="2016/03/03/fastdfs/"
+               data-title="fastdfs" data-url="http://yoursite.com/2016/03/03/fastdfs/">
+          </div>
+        
+      </div>
+    
+  </div>
+
+
+        </div>
+
+        
+        <!-- 多说热评文章-->
+        <p>热评文章</p>
+        <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+        
+      </div>
+
+
+      
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview">
+        <div class="site-author motion-element">
+          <img class="site-author-image" src="http://7xjdmz.com1.z0.glb.clouddn.com/tou_xiang.jpeg" alt="Jing Xu" />
+          <p class="site-author-name">Jing Xu</p>
+        </div>
+        <p class="site-description motion-element"></p>
+        <div class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            <a href="/categories">
+              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-name">分类</span>
+              </a>
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </div>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+              <a href="http://douban.com/people/37799176" target="_blank">douban</a>
+            </span>
+            
+          
+        </div>
+
+        
+        
+          <div class="cc-license motion-element">
+            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank">
+              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
+        
+
+      </div>
+
+      
+        <div class="post-toc-wrap sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator"></div>
+          <div class="post-toc">
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#安装"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#下载软件"><span class="nav-number">1.1.</span> <span class="nav-text">下载软件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装common"><span class="nav-number">1.2.</span> <span class="nav-text">安装common</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装fastdfs"><span class="nav-number">1.3.</span> <span class="nav-text">安装fastdfs</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装fastdht"><span class="nav-number">1.4.</span> <span class="nav-text">安装fastdht</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装db"><span class="nav-number">1.4.1.</span> <span class="nav-text">安装db</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装fastdht"><span class="nav-number">1.4.2.</span> <span class="nav-text">安装fastdht</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置"><span class="nav-number">2.</span> <span class="nav-text">配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#配置fastdht"><span class="nav-number">2.1.</span> <span class="nav-text">配置fastdht</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#启动"><span class="nav-number">2.2.</span> <span class="nav-text">启动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置tracker"><span class="nav-number">2.3.</span> <span class="nav-text">配置tracker</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#启动"><span class="nav-number">2.4.</span> <span class="nav-text">启动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置storage"><span class="nav-number">2.5.</span> <span class="nav-text">配置storage</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#启动"><span class="nav-number">2.6.</span> <span class="nav-text">启动</span></a></li></ol></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator"></div>
+        </div>
+      
+
+    </div>
+  </div>
+
+
+    </div>
+
+    <div id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy; &nbsp;  2015 - 
+  2016
+  <span class="with-love">
+    <i class="icon-heart"></i>
+  </span>
+  <span class="author">Jing Xu</span>
+</div>
+
+<!--
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+-->
+
+
+
+      </div>
+    </div>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js"></script>
+  
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/js/motion_global.js" id="motion.global"></script>
+
+
+
+
+  
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var $sidebarInner = $('.sidebar-inner');
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.didShow', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+          var self = this;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      $(indicator).velocity('stop').velocity({
+        opacity: action === 'show' ? 0.4 : 0
+      }, { duration: 100 });
+    }
+
+  });
+</script>
+
+
+  <script type="text/javascript" id="sidebar.nav">
+    $(document).ready(function () {
+      var html = $('html');
+
+      $('.sidebar-nav li').on('click', function () {
+        var item = $(this);
+        var activeTabClassName = 'sidebar-nav-active';
+        var activePanelClassName = 'sidebar-panel-active';
+        if (item.hasClass(activeTabClassName)) {
+          return;
+        }
+
+        var currentTarget = $('.' + activePanelClassName);
+        var target = $('.' + item.data('target'));
+
+        currentTarget.velocity('transition.slideUpOut', 200, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', 200)
+            .addClass(activePanelClassName);
+        });
+
+        item.siblings().removeClass(activeTabClassName);
+        item.addClass(activeTabClassName);
+      });
+
+      $('.post-toc a').on('click', function (e) {
+        e.preventDefault();
+        var offset = $(escapeSelector(this.getAttribute('href'))).offset().top;
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        });
+      });
+
+      // Expand sidebar on post detail page by default, when post has a toc.
+      var $tocContent = $('.post-toc-content');
+      if (isDesktop() && CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    });
+  </script>
+
+
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (CONFIG.sidebar === 'always') {
+        displaySidebar();
+      }
+    });
+  </script>
+
+  
+
+  
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"jingxu"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+
+
+  
+
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"3","bdPos":"left","bdTop":"250"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+  
+
+</body>
+</html>
